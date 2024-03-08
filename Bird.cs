@@ -7,6 +7,8 @@ internal class Bird : Animal
 {
     private double wingspan;
 
+    // Fråga 3.3.13. Ett nytt attribut för alla fåglar här är lämpligt att lägga här. 
+
     /// <summary>
     /// Gets or sets the wingspan of the bird.
     /// </summary>
@@ -21,7 +23,7 @@ internal class Bird : Animal
         }
     }
 
-    // Fråga 13: Här är det lämpligt att lägga ett attribut som är gemensamt för alla fåglar. 
+    // Fråga 13: Det är lämpligt att lägga ett attribut som är gemensamt för alla fåglar här. 
 
     /// <summary>
     /// Constructs a new instance of Bird class.

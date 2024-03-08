@@ -11,6 +11,70 @@ internal abstract class Animal
     private int age;
     private string habitat;
 
+    // Fråga 3.3.14. Ett nytt attribut för alla djur här är lämpligt att lägga här. 
+
+    // Properties with getters and setters
+
+    /// <summary>
+    /// Gets or sets the name of the animal.
+    /// </summary>
+    /// <exception cref="ArgumentException">Thrown when the name is empty or null.</exception>
+    public string Name
+    {
+        get => name;
+        set
+        {
+            ValidateName(value);
+
+            name = value;
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the weight of the animal.
+    /// </summary>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when weight is non-positive.</exception>
+    public double Weight
+    {
+        get => weight;
+        set
+        {
+            ValidateWeight(value);
+            
+            weight = value;
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the age of the animal.
+    /// </summary>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when the age is negative.</exception>
+    public int Age
+    {
+        get => age;
+        set
+        {
+            ValidateAge(value);
+            
+            age = value;
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the habitat of the animal.
+    /// </summary>
+    /// <exception cref="ArgumentException">Thrown when the habitat is empty or null.</exception>
+    public string Habitat
+    {
+        get => habitat;
+        set
+        {
+            ValidateHabitat(value);
+            
+            habitat = value;
+        }
+    }
+
     /// <summary>
     /// Constructor for the Animal class.
     /// </summary>
@@ -33,64 +97,6 @@ internal abstract class Animal
         this.weight = weight;
         this.age = age;
         this.habitat = habitat;
-    }
-
-    // Properties with getters and setters
-
-    /// <summary>
-    /// Gets or sets the name of the animal.
-    /// </summary>
-    /// <exception cref="ArgumentException">Thrown when the name is empty or null.</exception>
-    public string Name
-    {
-        get => name;
-        set
-        {
-            ValidateName(value);
-            name = value;
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets the weight of the animal.
-    /// </summary>
-    /// <exception cref="ArgumentOutOfRangeException">Thrown when weight is non-positive.</exception>
-    public double Weight
-    {
-        get => weight;
-        set
-        {
-            ValidateWeight(value);
-            weight = value;
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets the age of the animal.
-    /// </summary>
-    /// <exception cref="ArgumentOutOfRangeException">Thrown when the age is negative.</exception>
-    public int Age
-    {
-        get => age;
-        set
-        {
-            ValidateAge(value);
-            age = value;
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets the habitat of the animal.
-    /// </summary>
-    /// <exception cref="ArgumentException">Thrown when the habitat is empty or null.</exception>
-    public string Habitat
-    {
-        get => habitat;
-        set
-        {
-            ValidateHabitat(value);
-            habitat = value;
-        }
     }
 
     // Abstract methods

@@ -26,25 +26,38 @@ internal class Program
             bird, worm, flamingo, swan, wolfman, hedgehog, dog, horse, wolf,pelican
         };
 
-        List<Bird> birds = new();
+        List<Bird> moreBirds = new();
 
-        //Fråga 9. Både Horse och Bird är Animal, men eftersom Bird inte är en Horse kan den inte använda sig av Horse metod. 
-        //Fråga 10. Animal
+        // Fråga 3.4.9. Eftersom horse inte ärver ifrån Bird kan man inte lägga till Horse till listan. 
+        // Fråga 3.4.10. Den minsta gemensamma nämnaren för alla klasser är Animal, vilket kräver att listan ska ta Animal för att alla klasser ska kunna läggas till i den. 
 
         foreach (Animal animal in animals)
         {
+            /*
+             * Fråga 3.4.13. 
+             * 
+             * varje iteration i foreach-slingan anropar metoden DoSound() för den specifika instansen av animal. om DoSound inte skulle vara implementerad för just den klassen anropas DoSound i den klassen som den aktuella typen ärver ifrån.
+             * Med andra ord kan man säga att varje djur gör sitt eget unika ljud baserat på sin typ och eventuella specialiserade implementationer av DoSound(). Detta gör det möjligt att hantera olika djurarter på ett flexibelt sätt i koden.
+             * 
+             */
             animal.DoSound();
+
             Console.WriteLine(animal.Stats());
             //Console.WriteLine(animal.Scratch());
-            // Fråga 17: Inte alla Animal är en Dog. 
 
+            /* Fråga 3.4.17. 
+             * 
+             * För att ett animal ska kunna använda metoden Scratch krävs det att det är en Dog, eller ärver ifrån Dog. 
+             * För att eventuellt kunna använda scratch med 
+             * 
+             */
             if (animal is IPerson)
             {
                 IPerson person = (IPerson)animal;
 
                 person.Talk("Not only can I make sounds. I can also talk!");
             }
-
+            
             if (animal is Dog)
             {
                 Dog dog1 = (Dog)animal;
