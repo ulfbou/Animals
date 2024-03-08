@@ -34,6 +34,7 @@ internal class Horse : Animal
     public Horse(string name, double weight, int age, string habitat, string breed = "Arabian") : base(name, weight, age, habitat)
     {
         ValidateBreed(breed);
+
         Breed = breed;
     }
 
