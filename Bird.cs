@@ -19,6 +19,7 @@ internal class Bird : Animal
         internal set
         {
             ValidateWingspan(value);
+
             wingspan = value;
         }
     }
@@ -38,6 +39,7 @@ internal class Bird : Animal
     public Bird(string name, double weight, int age, string habitat, double wingspan) : base(name, weight, age, habitat)
     {
         ValidateWingspan(wingspan);
+
         Wingspan = wingspan;
     }
 
@@ -46,7 +48,7 @@ internal class Bird : Animal
     /// </summary>
     /// <param name="wingspan">The wingspan to validate.</param>
     /// <exception cref="ArgumentOutOfRangeException">Thrown when the wingspan is non-positive.</exception>
-    protected void ValidateWingspan(double wingspan)
+    private void ValidateWingspan(double wingspan)
     {
         if (wingspan <= 0)
         {

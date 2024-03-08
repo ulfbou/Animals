@@ -10,7 +10,7 @@ internal class Horse : Animal
     /// <summary>
     /// Gets or sets the breed of the horse.
     /// </summary>
-    /// </summary>
+    /// <exception cref="ArgumentException">Thrown when the breed is empty or null.</exception>
     public string Breed
     {
         get => breed;
