@@ -56,7 +56,7 @@ internal class Program
                 IPerson person = (IPerson)animal;
 
                 person.Talk("Not only can I make sounds. I can also talk!");
-            }
+            } 
             
             if (animal is Dog)
             {

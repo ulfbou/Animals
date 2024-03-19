@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents a wolfman, a hybrid between a wolf and a person.
 /// </summary>
-internal class Wolfman : Wolf, IPerson
+internal class Wolfman : Wolf, IPerson 
 {
     /// <summary>
     /// Constructs a new instance of the Wolfman class.

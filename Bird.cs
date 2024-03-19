@@ -13,7 +13,7 @@ internal class Bird : Animal
     /// Gets or sets the wingspan of the bird.
     /// </summary>
     /// <exception cref="ArgumentOutOfRangeException">Thrown when the wingspan is set to a non-positive value.</exception>
-    public double Wingspan
+    public double Wingspan 
     {
         get => wingspan;
         internal set

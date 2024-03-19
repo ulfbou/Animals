@@ -57,7 +57,7 @@ internal class Wolf : Animal
     }
 
     // Validation methods
-
+     
     /// <summary>
     /// Validates the howling frequency of the wolf.
     /// </summary>

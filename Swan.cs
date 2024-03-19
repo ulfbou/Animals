@@ -60,7 +60,7 @@ internal class Swan : Bird
 
     /// <summary>
     /// Validates the mate bond of the swan.
-    /// </summary>
+    /// </summary> 
     /// <param name="mateBond">The mate bond to validate.</param>
     /// <exception cref="ArgumentException">Thrown when the mate bond is empty or null.</exception>
     private void ValidateMateBond(string mateBond)

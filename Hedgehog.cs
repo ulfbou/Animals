@@ -8,7 +8,7 @@ internal class Hedgehog : Animal
     /// <summary>
     /// Gets or sets a value indicating whether the hedgehog is nocturnal.
     /// </summary>
-    public bool IsNocturnal { get; internal set; }
+    public bool IsNocturnal { get; internal set; } 
 
     /// <summary>
     /// Constructs a new instance of the Hedgehog class.

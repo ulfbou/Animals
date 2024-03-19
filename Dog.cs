@@ -6,7 +6,7 @@
 internal class Dog : Animal
 {
     /// <summary>
-    /// Gets or sets a value indicating whether the dog is house trained.
+    /// Gets or sets a value indicating whether the dog is house trained. 
     /// </summary>
     public bool IsHouseTrained { get; internal set; }
 

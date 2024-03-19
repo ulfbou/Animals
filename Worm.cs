@@ -5,7 +5,7 @@
 /// </summary>
 internal class Worm : Animal
 {
-    private int segmentCount;
+    private int segmentCount; 
 
     /// <summary>
     /// Gets or sets the number of segments of the worm.

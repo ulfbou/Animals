@@ -17,7 +17,7 @@ internal class Horse : Animal
         internal set
         {
             ValidateBreed(value);
-            breed = value;
+            breed = value; 
         }
     }
 

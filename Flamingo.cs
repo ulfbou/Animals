@@ -8,7 +8,7 @@ internal class Flamingo : Bird
     private double legLength;
 
     /// <summary>
-    /// Gets or sets the length of the flamingo's legs.
+    /// Gets or sets the length of the flamingo's legs. 
     /// </summary>
     public double LegLength
     {
